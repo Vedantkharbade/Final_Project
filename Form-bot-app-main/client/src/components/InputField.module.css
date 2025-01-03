@@ -1,0 +1,56 @@
+.custom_input{
+  position: relative;
+    width: 315px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #18181B;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.3rem;
+}
+.input{
+  display: none;
+}
+.input_button{
+   width: 283px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: #1F1F23;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    margin-left: 13px;
+}
+.typography{
+  color: #FFF;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px; /* 105% */
+}
+  
+.delete_image{
+  position: absolute;
+  width: 40px;
+  height: 21px;
+  top: -12px;
+  right: -12px;
+}
+.delete_image .delete{
+  width: 100%;
+  height:100%;
+  object-fit: contain;
+}
+.para_typography{
+  color: #555;
+font-family: "Open Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 21px; /* 175% */
+}

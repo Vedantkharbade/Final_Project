@@ -1,0 +1,96 @@
+.bubble {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #df1212;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    color: black;
+  }
+  h3,div{
+    margin: 5px 5px;
+  }
+  .bubble_text{
+    position: relative;
+    width: 315px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #18181B;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.3rem;
+  }
+  .typography{
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px; /* 105% */
+  }
+
+  .input{
+    width: 283px;
+    height: 40px;
+    border-radius: 5px;
+    /* border: 1px solid #F55050; */
+    background: #1F1F23;
+    display: flex;
+    justify-content: start;
+    align-items:center;
+  }
+  .para{
+    margin-top: 0;
+    color: #522224;
+    font-family: Poppins;
+    font-size: 10.434px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.image{
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.textarea{
+  color: white;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.delete_image{
+  position: absolute;
+  width: 40px;
+  height: 21px;
+  top: -12px;
+  right: -12px;
+}
+.delete_image .delete{
+  width: 100%;
+  height:100%;
+  object-fit: contain;
+}
+
+.hidden_file_input {
+  display: none;
+}
+.custom_file_button{
+    width: 283px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: #1F1F23;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    margin-left: 13px;
+}
+
+
+
+  

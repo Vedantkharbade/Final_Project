@@ -1,0 +1,31 @@
+.folder_div{
+ 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.folder{
+    display: flex;
+    flex-wrap:nowrap;
+    height: 40px;
+    width: 10.5rem;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+}
+.modal{
+   position: absolute;
+   top: 19%;
+   left:35%;
+   z-index: 80;
+}
+
+.image img{
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* height: 95vh; */
+  margin: 0;
+}
+
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  background: #18181B;
+  display: flex;
+  align-items: center;
+  padding: 5px 0 5px 40px;
+}
+.button_container {
+    display: flex;
+    
+    position: absolute;
+    left: 45%;
+  }
+  .button_disk{
+   margin-left: 85%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  
+  .button {
+    color: rgba(255, 255, 255, 0.92);
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16.8px; /* 105% */
+    background-color: transparent;
+    border: none;
+    display: flex;
+    min-width: 32px;
+    padding: 7px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+  }
+  
+  .button:focus, .button:active {
+    border: 1px solid #7EA6FF;
+    background-color: transparent;
+    outline: none; /* Remove default outline */
+  }
+  
+  .share {
+    width: 65px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #1A5FFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.8rem;
+  }
+  
+  .save {
+    width: 65px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: rgba(74, 222, 128, 0.80);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button_disk > img {
+    cursor: pointer;
+    width: 31px;
+    height: 31px;
+    object-fit: contain;
+  }
+  
+  .linkCopied {
+    width: 116.387px;
+    height: 34.387px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #18181B;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #3D3D3F;
+    position: absolute;
+    right: 6rem;
+  }
+  
+  .linkCopiedImage {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  
+  .link_para {
+    color: rgba(255, 255, 255, 0.92);
+    font-family: "Open Sans";
+    font-size: 12.511px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15.013px; /* 120% */
+  }
+  
+  .container {
+    display: flex;
+    flex: 1; /* Take the remaining space */
+  }
+
+
+  .customize_theme{
+    display: flex;
+    flex-direction: column;
+    width: 344px;
+    min-height: 100%;
+    padding: 40px;
+    /* border-radius: 8px; */
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: #18181B;
+    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.10), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  .theme_image_one{
+    width: 241px;
+    height: 206px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .theme_image_one img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .theme_workspace{
+    width: 77%;
+    flex-shrink: 0;
+    background-color: beige;
+    display: flex;
+    justify-content: space-around;
+  }
+  .theme_container{
+    display: flex;
+  }
+
+  .theme1 {
+    background-color: white;
+    color: black; /* Example text color */
+  }
+
+  
+  .theme2 {
+    background-color: #171923;
+    color: white; /* Example text color */
+  }
+  
+  .theme3 {
+    background-color: #508C9B;
+    color: white; /* Example text color */
+  }
+
+.bot_interface{
+  width: 100px;
+  height: 50px;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bot_interface img{
+  width: 45px;
+  height: 45px;
+}
+.user_interface{
+  width: 100px;
+  height: 50px;
+  margin-top: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user_interface button{
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #1A5FFF;
+  color: white;
+  border: none;
+}
+
+.bot{
+  object-fit: contain;
+  /* background-color: white; */
+  padding: 7px;
+  border-radius: 3px;
+}
+
+.loading{
+  background-color: #121214;
+  color: #3D3D3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.theme_container_title{
+    color: rgba(255, 255, 255, 0.92);
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16.8px; /* 105% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,310 @@
+
+.formContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 3%;
+  overflow: hidden;
+}
+
+.initialContainer {
+  display: flex;
+  justify-content: space-around;
+  overflow: auto;
+}
+
+.initialGreeting {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.initialGreetingUser {
+  padding-top: 3rem;
+}
+
+.TextInput, .EmailInput, .DateInput, .NumberInput, .RatingInput, .PhoneInput, .ButtonInput {
+  
+  width: 300px;
+  height: 50px;
+  border-radius: 4px;
+background: #777;
+box-shadow: 0px 4px 6.3px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botImage {
+  width: 50px; 
+  height: 50px; 
+}
+
+.bubblePlacement .botImage {
+  object-fit: contain;
+}
+
+.greetingText {
+  width: 50%;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background-color: rgb(173, 171, 171);
+}
+
+.initialGreetingUser button {
+  background-color: coral;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.chatAndForm {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  
+}
+
+.chatContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.chatImage, .chatVideo, .chatGif, .question, .answer {
+  width: 350px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+.formFields {
+  min-width: 40%;
+  display: flex;
+  gap: 1rem;
+  margin-right: 9%;
+  justify-content: end;
+  align-items: center;
+}
+
+.fieldContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nextButton {
+  background-color: coral;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submitButton {
+  border-radius: 5px;
+  background: #1A5FFF;
+  padding: 0.5rem 0.3rem;
+  cursor: pointer;
+}
+
+.submitButton img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.inputField {
+  color: #777;
+  width: 300px;
+  height: 50px;
+  padding: 0.4rem 0.2rem;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0px 4px 6.3px 0px rgba(0, 0, 0, 0.25);
+}
+.inputField::placeholder{
+  padding-left: 15px;
+}
+
+.bubble {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 21%;
+}
+
+.bubble.show {
+  transform: translateY(0); /* Final position for animation */
+  opacity: 1; /* Final opacity for animation */
+}
+
+
+.input {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 65%;
+}
+
+.chatHistory {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.chatAndForm {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem; 
+}
+
+.chatHistory {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  overflow-x: hidden; 
+}
+/* Custom scrollbar for WebKit browsers */
+ ::-webkit-scrollbar {
+  width: 1px;
+}
+
+.ratingContainer {
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6.3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ratingCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #1A5FFF;
+  color: #FFF;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.selectedRating {
+  background-color: orange;
+}  
+
+.ChatsubmitButton{
+  width: 13%;
+  border-radius: 5px;
+  background: #777;
+}
+.chat_send_icon{
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 0.5rem;
+  }
+
+  .chatContainer, .formFields {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .greetingText {
+    width: 100%;
+  }
+
+  .TextInput, .EmailInput, .DateInput, .NumberInput, .RatingInput, .PhoneInput, .ButtonInput {
+    width: 100%;
+  }
+
+  .input {
+    padding-left: 0;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .bubble {
+    justify-content: center;
+    padding-left: 0;
+  }
+  
+  .chatImage, .chatVideo, .chatGif, .question, .answer {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .ChatsubmitButton{
+    width: 18%;
+    border-radius: 5px;
+    background: #777;
+  }
+}
+
+@media (max-width: 480px) {
+  .initialGreetingUser {
+    padding-top: 2rem;
+  }
+
+  .chatImage, .chatVideo, .chatGif, .question, .answer {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .formFields {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .inputField {
+    width: 100%;
+  }
+
+  .ratingCircle {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  .ChatsubmitButton{
+    width: 17%;
+    border-radius: 5px;
+    background: #777;
+  }
+}
+
+.theme1 {
+  background-color: white;
+  color: black; /* Example text color */
+}
+
+
+.theme2 {
+  background-color: #171923;
+  color: white; /* Example text color */
+}
+
+.theme3 {
+  background-color: #508C9B;
+  color: white; /* Example text color */
+}
+
+
+
+
+
+  

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  background: #18181B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0 5px 40px;
+}
+
+.formname_input {
+  color: white;
+  padding-left: 20%;
+  border: none;
+  width: 148px;
+  height: 30px;
+  border-radius: 3px;
+  background: #37373E;
+}
+
+.formname_input::placeholder {
+  color: rgba(118, 118, 118, 0.82);
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px; /* 175% */
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  color: rgba(255, 255, 255, 0.92);
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16.8px; /* 105% */
+  background-color: transparent;
+  border: none;
+  display: flex;
+  min-width: 32px;
+  padding: 7.1px 10px 7.1px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.button:focus, .button:active {
+  border: 1px solid #7EA6FF;
+  background-color: transparent;
+  outline: none; /* Remove default outline */
+}
+
+.share {
+  width: 65px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #1A5FFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.8rem;
+}
+
+.save {
+  width: 65px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: rgba(74, 222, 128, 0.80);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button > img {
+  cursor: pointer;
+  width: 31px;
+  height: 31px;
+}
+
+.linkCopied {
+  width: 116.387px;
+  height: 34.387px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #18181B;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #3D3D3F;
+  position: absolute;
+  right: 6rem;
+  top:4rem;
+}
+
+.linkCopied img{
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.link_para {
+  width: 100px;
+  color: rgba(255, 255, 255, 0.92);
+  font-family: "Open Sans";
+  font-size: 12.511px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.013px; /* 120% */
+  object-fit: contain;
+}
+
+.container {
+  margin: -5px;
+  display: flex;
+  flex: 1; /* Take the remaining space */
+}
